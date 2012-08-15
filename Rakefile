@@ -19,6 +19,7 @@ Jeweler::Tasks.new do |gem|
   gem.description = %Q{Add a to_bool method to all objects that Does What You Mean.}
   gem.email = "jfrisby@mrjoy.com"
   gem.authors = ["Jon Frisby"]
+  gem.extra_rdoc_files = [ "README.md", "LICENSE", "CHANGELOG.md"]
   # gem.required_ruby_version = "> 1.9.2"
 
   # Jeweler wants to manage dependencies for us when there's a Gemfile.
