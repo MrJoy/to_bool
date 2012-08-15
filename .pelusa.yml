@@ -1,0 +1,4 @@
+sources: '{lib,features}/**/*.rb'
+lints:
+  LineRestriction:
+    limit: 150

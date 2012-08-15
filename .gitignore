@@ -1,0 +1,20 @@
+/.rvmrc
+
+/.bundle
+/bin
+
+*.sw?
+
+/.yardoc
+/doc
+/rdoc
+
+/pkg
+
+/coverage*
+/tmp
+# tags
+# rerun.txt
+
+*.rbc
+/.rbx
