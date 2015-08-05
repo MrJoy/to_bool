@@ -1,3 +1,5 @@
+#ruby-gemset=to_bool
+ruby "2.2.2"
 source 'https://rubygems.org'
 
 # Code quality:
