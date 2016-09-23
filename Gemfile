@@ -33,4 +33,5 @@ group :test do
   #############################################################################
   gem 'cucumber',  :require => false
   gem 'simplecov', :require => false
+  gem 'minitest',  :require => false
 end

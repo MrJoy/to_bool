@@ -23,18 +23,18 @@ end
 
 Then /^I should get true$/ do
   @result_objects.each do |obj|
-    obj[1].should == true
+    assert obj[1] == true
   end
 end
 
 Then /^I should get false$/ do
   @result_objects.each do |obj|
-    obj[1].should == false
+    assert obj[1] == false
   end
 end
 
 Then /^I should get an ArgumentError$/ do
   @result_objects.each do |obj|
-    obj[1].class.should == ArgumentError
+    assert obj[1].class == ArgumentError
   end
 end
