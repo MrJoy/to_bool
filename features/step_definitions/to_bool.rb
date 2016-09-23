@@ -1,9 +1,9 @@
-Given /^any of true, "1", "true", "True", "TRUE", "t", "yes", "y", 1, -1, 2$/ do
-  @test_objects = [true, "1", "true", "True", "TRUE", "t", "yes", "y", 1, -1, 2]
+Given /^any of true, "1", "true", "True", "TRUE", "t", "yes", "y", 1.0, 1, -1, 2$/ do
+  @test_objects = [true, "1", "true", "True", "TRUE", "t", "yes", "y", 1.0, 1, -1, 2]
 end
 
-Given /^any of false, "0", "false", "False", "FALSE", "f", "no", "n", "", 0, nil$/ do
-  @test_objects = [false, "0", "false", "False", "FALSE", "f", "no", "n", "", 0, nil]
+Given /^any of false, "0", "false", "False", "FALSE", "f", "no", "n", "", 0.0, 0, nil$/ do
+  @test_objects = [false, "0", "false", "False", "FALSE", "f", "no", "n", "", 0.0, 0, nil]
 end
 
 Given /^any of "dummy", "any_unexpected_value_at_all"$/ do

@@ -29,7 +29,7 @@ end
 # Monkey-patch to provide handy to_bool method, to make dealing with arbitrary
 # parsing of HTTP parameters when we just want booleans.
 #
-class Fixnum
+class Numeric
   ##
   # Monkey-patch for `Fixnum` to turn non-zero values into `true`, and zero into
   # `false`.  Matches the API for the `Object#to_bool` monkey-patch.
