@@ -8,7 +8,7 @@ group :development do
   # Development Workflow
   #############################################################################
   gem 'rake'
-  gem 'jeweler'
+  gem 'jeweler', '~> 2.0'
 
   #############################################################################
   # Documentation
@@ -23,8 +23,8 @@ group :development do
   #############################################################################
   # Code Quality
   #############################################################################
-  gem 'cane',      :require => false
-  gem 'brakeman',  :require => false
+  # gem 'cane',      :require => false
+  # gem 'brakeman',  :require => false
 end
 
 group :test do
