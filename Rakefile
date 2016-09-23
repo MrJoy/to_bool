@@ -38,12 +38,12 @@ Jeweler::Tasks.new do |gem|
   # should suffice for now.
   gem.dependencies.clear
 
-  Bundler.load.dependencies_for(*RUNTIME_GROUPS).each do |dep|
-    runtime_resolved = Bundler.definition.specs_for(Bundler.definition.groups - DEVELOPMENT_GROUPS).select { |spec| spec.name == dep.name }.first
-    if(!runtime_resolved.nil?)
-      gem.add_dependency(dep.name, ">= #{runtime_resolved.version}")
-    end
-  end
+  # Bundler.load.dependencies_for(*RUNTIME_GROUPS).each do |dep|
+  #   runtime_resolved = Bundler.definition.specs_for(Bundler.definition.groups - DEVELOPMENT_GROUPS).select { |spec| spec.name == dep.name }.first
+  #   if(!runtime_resolved.nil?)
+  #     gem.add_dependency(dep.name, ">= #{runtime_resolved.version}")
+  #   end
+  # end
 
   gem.files.reject! do |fn|
     fn =~ /^Gemfile.*/ ||
